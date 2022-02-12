@@ -9,7 +9,7 @@ const [recipes, setRecipes] = useState([]);
 const [search, setSearch] = useState("");
 const [query, setQuery] = useState("chicken");
 useEffect(() => {
-	getRecipes();
+	getRecipes(); // eslint-disable-next-line
 }, [query])
 const getRecipes = async () => {
 	const response = await fetch
