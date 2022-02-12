@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .recipe{
 	border-radius: 10px;
 	box-shadow: -15px -15px 15px rgba(225,225,225,.2), 15px 15px 15px rgba(0,0,0,.1);
@@ -9,7 +9,7 @@
 	background: white;
 	align-items: center;
 	min-width: 40%;
-	font-family: 'Lobster', cursive;
+	font-family: 'Lato';
 }
 
 .image{
