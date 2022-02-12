@@ -14,7 +14,7 @@
   border:none;
   padding: 10px;
   border-radius: 2rem;
-  box-shadow: 5px 5px 2px olive;
+  box-shadow: -15px -15px 15px rgba(225,225,225,.2), 15px 15px 15px rgba(0,0,0,.1);
   }
   .search-button{
   background: olive;
