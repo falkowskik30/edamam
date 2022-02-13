@@ -33,5 +33,11 @@
   justify-content: space-around;
   flex-wrap: wrap;
   }
+  .banner{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    background:white;
+  }
   
   

@@ -25,3 +25,7 @@ h1 {
 	width: 100%;
 	height: 22rem;
 }
+
+.banner {
+	object-fit: cover;
+}
