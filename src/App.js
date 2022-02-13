@@ -50,6 +50,7 @@ return (
 
 		))}
 	</div>
+	<div class='footer'>POWERED by EDAMAM</div>
 
 	</div>
 );
