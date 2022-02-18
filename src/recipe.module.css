@@ -5,11 +5,11 @@
 	margin: 20px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	background: white;
 	align-items: center;
 	min-width: 40%;
 	font-family: 'Lato';
+	position: relative;
 }
 
 .image{
@@ -25,7 +25,7 @@ h1 {
 	object-fit: cover;
 }
 
-.healthLabels {
+.healthLabelsList {
 	font-family: 'Times New Roman', Times, serif;
 }
 
