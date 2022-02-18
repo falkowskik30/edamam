@@ -8,8 +8,7 @@ const RecipeDetails = ({ingredients, healthLabels}) => {
             <ul key={uuidv4} className={style.ingredientList}>
                 <li className={style.ingredientText}>{ingredient.text}</li>
             </ul>
-        )
-            
+        )      
     })
 }
 
