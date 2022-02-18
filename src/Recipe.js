@@ -1,7 +1,7 @@
 import React from "react";
 import style from './recipe.module.css';
 
-const Recipe = ({title,calories,image,ingredients}) =>{
+const Recipe = ({title,calories,image,ingredients,healthLabels}) =>{
 	return(
 		<div className={style.recipe}>
 			
@@ -13,8 +13,12 @@ const Recipe = ({title,calories,image,ingredients}) =>{
 					<li>{ingredient.text}</li>
 				))}
 			</il>
+			<il>{healthLabels.map(healthLabels=>(
+				<li>{healthLabels}</li>
+			))}</il>
 			
 <p>Calories : {calories}</p>
+
 
 			
 		</div>

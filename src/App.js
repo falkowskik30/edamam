@@ -46,6 +46,7 @@ return (
 			calories={recipe.recipe.calories.toFixed(2)}
 			image={recipe.recipe.image}
 			ingredients={recipe.recipe.ingredients}
+			healthLabels={recipe.recipe.healthLabels}
 		/>
 
 		))}
