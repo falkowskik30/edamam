@@ -15,8 +15,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) =>
                     <li>{healthLabels}</li>
                 ))}
             </il>
-        <p>Total Calories: {calories}</p>
-        <p>{Nutrients}</p>
+        <p className={style.calorieText}>Total Calories: {calories}</p>
         <a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
             </>
     )
