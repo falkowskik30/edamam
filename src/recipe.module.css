@@ -63,3 +63,7 @@ h1 {
 .ingredientText {
 	font-size:1.5rem;
 }
+
+a {
+	padding: 1rem;
+}
