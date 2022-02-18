@@ -40,6 +40,11 @@ h1 {
 	border:none;
 }
 
+.recipeDetails:hover {
+	background: darkolivegreen;
+	transition: 1s;
+}
+
 .ingredientList {
 	margin-top: .5rem;
 	padding: .25rem;
