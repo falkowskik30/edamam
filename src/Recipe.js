@@ -10,7 +10,7 @@ const Recipe = ({title,calories,image,ingredients,healthLabels,totalNutrients,ur
 			<h1>{title}</h1>
 			<img className={style.image} src={image} alt=""/>
 			<button onClick={()=> setShow(!show)} className={style.recipeDetails}>Details</button>
-			{show && <RecipeDetails ingredients={ingredients} healthLabels={healthLabels}/>}			
+			{show && <RecipeDetails ingredients={ingredients} healthLabels={healthLabels} calories={calories}/>}			
 		</div>
 	);
 
