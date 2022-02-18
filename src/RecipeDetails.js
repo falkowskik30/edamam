@@ -6,7 +6,7 @@ const RecipeDetails = ({ingredients, healthLabels}) => {
     return  ingredients.map(ingredient => {
         return (
             <ul key={uuidv4} className={style.ingredientList}>
-                <li className='ingredient-text'>{ingredient.text}</li>
+                <li className={style.ingredientText}>{ingredient.text}</li>
             </ul>
         )
             

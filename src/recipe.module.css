@@ -31,16 +31,23 @@ h1 {
 
 .recipeDetails {
 	background: olive;
-	width:auto;
+	height:3rem;
+	border-radius:.25rem;
+	width:100%;
+	padding:.25rem;
+	border:none;
 }
 
 .ingredientList {
-	margin-top: 1rem;
-	background-color: olive;
-	border-radius: .5rem;
-	padding:.5rem;
+	margin-top: .5rem;
+	padding: .25rem;
 }
 
 .ingredientList li {
 	margin: .5rem 0;
+	list-style-type: none;
+}
+
+.ingredientText {
+	font-size:1.5rem;
 }
