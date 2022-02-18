@@ -30,6 +30,8 @@ h1 {
 }
 
 .recipeDetails {
+	font-size: 2rem;
+	color:white;
 	background: olive;
 	height:3rem;
 	border-radius:.25rem;
