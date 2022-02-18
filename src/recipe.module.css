@@ -29,3 +29,7 @@ h1 {
 .banner {
 	object-fit: cover;
 }
+
+.healthLabels {
+	font-family: 'Times New Roman', Times, serif;
+}
