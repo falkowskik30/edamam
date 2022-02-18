@@ -1,10 +1,11 @@
 import React from 'react'
+import style from './recipe.module.css'
 import {v4 as uuidv4} from "uuid"
 
-const RecipeDetails = ({ingredients}) => {
+const RecipeDetails = ({ingredients, healthLabels}) => {
     return  ingredients.map(ingredient => {
         return (
-            <ul key={uuidv4} className='ingredient-list'>
+            <ul key={uuidv4} className={style.ingredientList}>
                 <li className='ingredient-text'>{ingredient.text}</li>
             </ul>
         )

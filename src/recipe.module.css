@@ -21,8 +21,6 @@ h1 {
 	border-bottom: .5px solid black;
 }
 
-
-
 .banner {
 	object-fit: cover;
 }
@@ -34,4 +32,15 @@ h1 {
 .recipeDetails {
 	background: olive;
 	width:auto;
+}
+
+.ingredientList {
+	margin-top: 1rem;
+	background-color: olive;
+	border-radius: .5rem;
+	padding:.5rem;
+}
+
+.ingredientList li {
+	margin: .5rem 0;
 }
