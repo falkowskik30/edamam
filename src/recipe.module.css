@@ -33,3 +33,8 @@ h1 {
 .healthLabels {
 	font-family: 'Times New Roman', Times, serif;
 }
+
+.recipeDetails {
+	background: olive;
+	width:auto;
+}

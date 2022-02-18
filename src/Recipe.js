@@ -7,21 +7,7 @@ const Recipe = ({title,calories,image,ingredients,healthLabels,totalNutrients,ur
 			
 			<h1>{title}</h1>
 			<img className={style.image} src={image} alt=""/>
-
-			<il>
-				{ingredients.map(ingredient=>(
-					<li>{ingredient.text}</li>
-				))}
-			</il>
-			<il class='healthLabels'>{healthLabels.map(healthLabels=>(
-				<li>{healthLabels}</li>
-			))}</il>
-			<a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
-			
-<p>Calories : {calories}</p>
-
-
-			
+			<button className={style.recipeDetails}>Details</button>			
 		</div>
 	);
 
