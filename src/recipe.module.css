@@ -12,6 +12,10 @@
 	position: relative;
 }
 
+.recipe{
+	max-width:450px;
+}
+
 .image{
 	border-radius: 10px;
 	margin:0px 0px 20px 0px;
@@ -66,8 +70,16 @@ h1 {
 
 .calorieText {
 	font-size:1.5rem;
+	
 }
 
 a {
 	padding: 1rem;
+	background-color:rgb(190, 188, 188);
+	border-radius:.5rem;
+	color: white;
+}
+
+a:hover {
+	background-color: gray;
 }
