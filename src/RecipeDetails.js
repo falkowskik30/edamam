@@ -2,7 +2,7 @@ import React from 'react';
 import style from './recipe.module.css';
 import {v4 as uuidv4} from "uuid";
 
-const RecipeDetails = ({ingredients, healthLabels, calories}) => {
+const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) => {
     return (
         <><il key={uuidv4} className={style.ingredientList}>
             {ingredients.map(ingredient => (
@@ -16,6 +16,8 @@ const RecipeDetails = ({ingredients, healthLabels, calories}) => {
                 ))}
             </il>
         <p>Total Calories: {calories}</p>
+        <p>{Nutrients}</p>
+        <a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
             </>
     )
 };
