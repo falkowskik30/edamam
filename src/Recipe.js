@@ -16,7 +16,7 @@ const Recipe = ({title,calories,image,ingredients,healthLabels,totalNutrients,ur
 			<il class='healthLabels'>{healthLabels.map(healthLabels=>(
 				<li>{healthLabels}</li>
 			))}</il>
-			<a href={url}>Full Recipe</a>
+			<a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
 			
 <p>Calories : {calories}</p>
 
