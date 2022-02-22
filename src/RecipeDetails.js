@@ -3,10 +3,6 @@ import style from './recipe.module.css';
 import {v4 as uuidv4} from "uuid";
 import StarRatingComponent from 'react-star-rating-component';
 
-// eslint-disable-next-line react/jsx-no-duplicate-props
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
-
-
 const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) => {
     return (
         <><il key={uuidv4} className={style.ingredientList}>
