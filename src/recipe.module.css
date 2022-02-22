@@ -69,8 +69,7 @@ h1 {
 }
 
 .calorieText {
-	font-size:1.5rem;
-	
+	font-size:1.5rem;	
 }
 
 a {
@@ -84,10 +83,6 @@ a:hover {
 	background-color: gray;
 }
 
-.StarBox {
-	padding:none;
-	background-color: lightgray;
-}
 .rating {
 	padding:2rem;
 	font-size: 3rem;
