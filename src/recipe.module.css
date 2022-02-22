@@ -42,7 +42,7 @@ h1 {
 	color:white;
 	background: olive;
 	height:3rem;
-	border-radius:.25rem;
+	border-radius:none;
 	width:100%;
 	padding:.25rem;
 	border:none;
@@ -75,12 +75,16 @@ h1 {
 a {
 	padding: 1rem;
 	background-color:rgb(190, 188, 188);
-	border-radius:.5rem;
+	border-radius:none;
 	color: white;
 }
 
 a:hover {
 	background-color: gray;
+}
+
+.RecipeButton {
+	padding:1.5rem;
 }
 
 .rating {

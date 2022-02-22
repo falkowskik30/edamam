@@ -20,7 +20,9 @@ const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) =>
         <div className={style.StarBox}>
             <StarRatingComponent className={style.rating}></StarRatingComponent>
         </div>
+        <div className={style.RecipeButton}>
         <a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
+        </div>
             </>
     )
 };
