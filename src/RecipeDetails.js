@@ -21,9 +21,8 @@ const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) =>
                 ))}
             </il>
         <p className={style.calorieText}>Total Calories: {calories}</p>
-        <div>
-            <StarRatingComponent
-            className={style.rating}></StarRatingComponent>
+        <div className={style.StarBox}>
+            <StarRatingComponent className={style.rating}></StarRatingComponent>
         </div>
         <a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
             </>
