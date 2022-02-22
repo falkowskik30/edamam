@@ -1,6 +1,11 @@
 import React from 'react';
 import style from './recipe.module.css';
 import {v4 as uuidv4} from "uuid";
+import StarRatingComponent from 'react-star-rating-component';
+
+// eslint-disable-next-line react/jsx-no-duplicate-props
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
+
 
 const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) => {
     return (
@@ -16,22 +21,9 @@ const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) =>
                 ))}
             </il>
         <p className={style.calorieText}>Total Calories: {calories}</p>
-        <div class={style.rating}>
-            <input type="radio" id="star5" name="rating" value="5">
-            </input>
-            <label for="star5"></label>
-            <input type="radio" id="star4" name="rating" value="4">
-            </input>
-            <label for="star4"></label>
-            <input type="radio" id="star3" name="rating" value="3">
-            </input>
-            <label for="star3"></label>
-            <input type="radio" id="star2" name="rating" value="2">
-            </input>
-            <label for="star2"></label>
-            <input type="radio" id="star1" name="rating" value="1">
-            </input>
-            <label for="star1"></label>
+        <div>
+            <StarRatingComponent
+            className={style.rating}></StarRatingComponent>
         </div>
         <a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
             </>
