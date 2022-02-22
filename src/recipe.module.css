@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .recipe{
-	border-radius: 10px;
+	border-radius: none;
 	box-shadow: -15px -15px 15px rgba(225,225,225,.2), 15px 15px 15px rgba(0,0,0,.1);
 	margin: 20px;
 	display: flex;
