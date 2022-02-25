@@ -4,8 +4,8 @@ import './App.css';
 import Recipe from './Recipe';
 
 const App = () => {
-const APP_ID = 'cd1acdba';
-const APP_KEY = 'd97d94719c7af890ade470b71d75eb8c';
+//const APP_ID = 'cd1acdba';
+//const APP_KEY = 'd97d94719c7af890ade470b71d75eb8c';
 const [recipes, setRecipes] = useState([]);
 const [search, setSearch] = useState("");
 const [query, setQuery] = useState("chicken");
@@ -14,7 +14,7 @@ useEffect(() => {
 }, [query])
 const getRecipes = async () => {
 	const response = await fetch
-		(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+		(`https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`);
 	const data = await response.json();
 	setRecipes(data.hits);
 	// console.log(data);
