@@ -69,6 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+### `npm run start` refuses connection to API
+
+In the event that you receive the ERR:refused to connect/connction, make sure the node server is started in addition to the frontend 
+
 ## Resources
 
 [React Star Rating Component](https://www.npmjs.com/package/react-star-rating-component)
