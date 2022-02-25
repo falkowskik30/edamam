@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {v4 as uuidv4} from 'uuid'
 import './App.css';
 import Recipe from './Recipe';
+import axios from 'axios';
 
 const { REACT_APP_API_ID, REACT_APP_API_KEY } = process.env;
 const App = () => {
@@ -14,12 +15,13 @@ useEffect(() => {
 	getRecipes(); // eslint-disable-next-line
 }, [query])
 const getRecipes = async () => {
-	const response = await fetch
-		(`https://api.edamam.com/search?q=${query}&app_id=${REACT_APP_API_ID}&app_key=${REACT_APP_API_KEY}`);
-	const data = await response.json();
-	setRecipes(data.hits);
+	//const response = await fetch
+	//	(`https://api.edamam.com/search?q=${query}&app_id=${REACT_APP_API_ID}&app_key=${REACT_APP_API_KEY}`);
+	//const data = await response.json();
+	//setRecipes(data.hits);
 	// console.log(data);
-
+	const response = await axios.get(`https://api.edamam.com/search?q=${query}&app_id=${REACT_APP_API_ID}&app_key=${REACT_APP_API_KEY}`);
+	setRecipes(response.data.hits);
 };
 const updateSearch = e => {
 	setSearch(e.target.value);
