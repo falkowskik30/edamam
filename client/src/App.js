@@ -4,10 +4,8 @@ import './App.css';
 import Recipe from './Recipe';
 import axios from 'axios';
 
-//const { REACT_APP_API_ID, REACT_APP_API_KEY } = process.env;
 const App = () => {
-//const APP_ID = 'cd1acdba';
-//const APP_KEY = 'd97d94719c7af890ade470b71d75eb8c';
+
 const [recipes, setRecipes] = useState([]);
 const [search, setSearch] = useState("");
 const [query, setQuery] = useState("chicken");
@@ -15,13 +13,9 @@ useEffect(() => {
 	getRecipes(); // eslint-disable-next-line
 }, [query])
 const getRecipes = async () => {
-	//const response = await fetch
-	//	(`https://api.edamam.com/search?q=${query}&app_id=${REACT_APP_API_ID}&app_key=${REACT_APP_API_KEY}`);
-	//const data = await response.json();
-	//setRecipes(data.hits);
-	// console.log(data);
 	const response = await axios.get(`http://localhost:5000/recipes/${query}`);
-	setRecipes(response.data.hits);
+	setRecipes(response.data);
+	//console.log(response.data)
 };
 const updateSearch = e => {
 	setSearch(e.target.value);
