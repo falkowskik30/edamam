@@ -3,6 +3,7 @@ import {v4 as uuidv4} from 'uuid'
 import './App.css';
 import Recipe from './Recipe';
 
+const { REACT_APP_API_ID, REACT_APP_API_KEY } = process.env;
 const App = () => {
 //const APP_ID = 'cd1acdba';
 //const APP_KEY = 'd97d94719c7af890ade470b71d75eb8c';
@@ -14,7 +15,7 @@ useEffect(() => {
 }, [query])
 const getRecipes = async () => {
 	const response = await fetch
-		(`https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`);
+		(`https://api.edamam.com/search?q=${query}&app_id=${REACT_APP_API_ID}&app_key=${REACT_APP_API_KEY}`);
 	const data = await response.json();
 	setRecipes(data.hits);
 	// console.log(data);
