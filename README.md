@@ -74,3 +74,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 In the event that you receive the ERR:refused to connect/connction, make sure the node server is started in addition to the frontend 
 
 ## Resources
+
+[Star Rating Component](https://www.npmjs.com/package/react-simple-star-rating)
