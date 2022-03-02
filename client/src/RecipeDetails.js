@@ -2,6 +2,7 @@ import React from 'react';
 import style from './recipe.module.css';
 import {v4 as uuidv4} from "uuid";
 //import StarRatingComponent from 'react-star-rating-component';
+import {Rating} from 'react-simple-star-rating';
 
 const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) => {
     return (
@@ -18,7 +19,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) =>
             </il>
         <p className={style.calorieText}>Total Calories: {calories}</p>
         <div className={style.StarBox}>
-            
+            <Rating></Rating>
         </div>
         <div className={style.RecipeButton}>
         <a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
