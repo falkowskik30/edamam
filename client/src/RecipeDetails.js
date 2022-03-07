@@ -87,6 +87,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, nutrients, url}) =>
         <div className={style.StarBox}>
             <Rating></Rating>
         </div>
+        
             </>
     )
 };
