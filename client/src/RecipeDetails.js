@@ -10,7 +10,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) => {
+const RecipeDetails = ({ingredients, healthLabels, calories, nutrients, url}) => {
     console.log(ingredients);
     return (
         <>
@@ -52,10 +52,43 @@ const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) =>
                     </Typography>
                 </AccordionDetails>
         </Accordion>
+
+        <Accordion>
+            <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panella-content"
+                id="panella-header"
+                >
+                    <Typography>Calories</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                    <p className={style.calorieText}>Total Calories: {calories}</p>
+                    </Typography>
+                </AccordionDetails>
+        </Accordion>
+
+        <Accordion>
+            <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panella-content"
+                id="panella-header"
+                >
+                    <Typography>Link</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        <div className={style.RecipeButton}>
+                            <a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
+                        </div>
+                    </Typography>
+                </AccordionDetails>
+        </Accordion>
         </div>
-
-        <Rating></Rating>
-
+        
+        <div className={style.StarBox}>
+            <Rating></Rating>
+        </div>
             </>
     )
 };
