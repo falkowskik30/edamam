@@ -84,6 +84,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
         </Accordion>
         </div>
         
+        {totalNutrients}
         <div className={style.StarBox}>
             <Rating></Rating>
         </div>
