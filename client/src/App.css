@@ -29,9 +29,11 @@
   background-color: darkolivegreen ;
   }
   .recipes{
-  display:flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display:grid;
+  
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1rem;
+  grid-template-rows: masonry;
   }
   .banner{
     display:flex;
