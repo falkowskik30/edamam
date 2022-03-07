@@ -10,7 +10,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const RecipeDetails = ({ingredients, healthLabels, calories, nutrients, url}) => {
+const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url}) => {
     console.log(ingredients);
     return (
         <>

@@ -15,7 +15,7 @@ useEffect(() => {
 const getRecipes = async () => {
 	const response = await axios.get(`http://localhost:5000/recipes/${query}`);
 	setRecipes(response.data);
-	//console.log(response.data)
+	console.log(response.data)
 };
 const updateSearch = e => {
 	setSearch(e.target.value);
@@ -45,7 +45,7 @@ return (
 			image={recipe.recipe.image}
 			ingredients={recipe.recipe.ingredients}
 			healthLabels={recipe.recipe.healthLabels}
-			Nutrients={recipe.recipe.nutrients}
+			totalNutrients={recipe.recipe.totalNutrients}
 			url={recipe.recipe.url}
 		/>
 
