@@ -14,6 +14,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) =>
     console.log(ingredients);
     return (
         <>
+        <div>
         <Accordion>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -33,7 +34,28 @@ const RecipeDetails = ({ingredients, healthLabels, calories, Nutrients, url}) =>
                 </AccordionDetails>
         </Accordion>
 
+        <Accordion>
+            <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panella-content"
+                id="panella-header"
+                >
+                    <Typography>Health Labels</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        <il key ={uuidv4} className={style.healthLabelsList}>
+                            {healthLabels.map(healthLabels=>(
+                                <li>{healthLabels}</li>
+                            ))}
+                        </il>
+                    </Typography>
+                </AccordionDetails>
+        </Accordion>
+        </div>
+
         <Rating></Rating>
+
             </>
     )
 };
