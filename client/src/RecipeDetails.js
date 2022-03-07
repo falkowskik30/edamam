@@ -78,9 +78,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, nutrients, url}) =>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <div className={style.RecipeButton}>
                             <a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
-                        </div>
                     </Typography>
                 </AccordionDetails>
         </Accordion>
