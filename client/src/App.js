@@ -9,6 +9,7 @@ import Recipes from "./pages/recipes";
 function App() {
   return (
     <>
+    <div className='banner'><img src='logo.png' alt='' ></img></div>
     <Router>
       <Navbar />
       <Routes>

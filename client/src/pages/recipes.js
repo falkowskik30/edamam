@@ -28,7 +28,7 @@ const getSearch = e => {
 
 return (
 	<div className="App">
-	<div className='banner'><img src='logo.png' alt='' ></img></div>
+	
 	<form className="search-form" onSubmit={getSearch} >
 		<input className="search-bar" type="text" value={search}
 			onChange={updateSearch} />
