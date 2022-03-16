@@ -58,9 +58,9 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panella-content"
                 id="panella-header"
-                sx={{color: 'blue',}}
+            
                 >
-                    <Typography>Calories</Typography>
+                    <Typography sx={{fontFamily:'monospace'}}>Calories</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography component={'span'}>
