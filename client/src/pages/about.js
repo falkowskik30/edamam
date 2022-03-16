@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
     return (
-        <div>
+        <div className="App">
             <h1>
                 Tastebase is an easy to use
                 Recipe Collector.
