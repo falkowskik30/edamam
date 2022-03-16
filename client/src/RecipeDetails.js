@@ -25,7 +25,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <il key={uuidv4} className={style.ingredientList}>
+                        <il key={uuidv4()} className={style.ingredientList}>
                             {ingredients.map(ingredient => (
                                 <li className={style.ingredientText}>{ingredient.text}</li>
                             ))}
