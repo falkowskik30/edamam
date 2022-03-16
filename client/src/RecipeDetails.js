@@ -24,12 +24,12 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography>Ingredients</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        <il key={uuidv4()} className={style.ingredientList}>
+                    <Typography component={'span'}>
+                        <ul key={uuidv4()} className={style.ingredientList}>
                             {ingredients.map(ingredient => (
                                 <li key={uuidv4()}className={style.ingredientText}>{ingredient.text}</li>
                             ))}
-                        </il>
+                        </ul>
                     </Typography>
                 </AccordionDetails>
         </Accordion>
@@ -43,12 +43,12 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography>Health Labels</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        <il key ={uuidv4()} className={style.healthLabelsList}>
+                    <Typography component={'span'}>
+                        <ul key ={uuidv4()} className={style.healthLabelsList}>
                             {healthLabels.map(healthLabels=>(
                                 <li key={uuidv4()}>{healthLabels}</li>
                             ))}
-                        </il>
+                        </ul>
                     </Typography>
                 </AccordionDetails>
         </Accordion>
@@ -62,8 +62,8 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography>Calories</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                    <p className={style.calorieText}>Total Calories: {calories}</p>
+                    <Typography component={'span'}>
+                        <p className={style.calorieText}>Total Calories: {calories}</p>
                     </Typography>
                 </AccordionDetails>
         </Accordion>
