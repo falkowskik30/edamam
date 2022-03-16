@@ -30,6 +30,7 @@
   }
   .recipes{
   display:grid;
+  align-items: start;
   
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 1rem;
