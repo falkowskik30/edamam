@@ -45,7 +45,7 @@ return (
 			image={recipe.recipe.image}
 			ingredients={recipe.recipe.ingredients}
 			healthLabels={recipe.recipe.healthLabels}
-			totalNutrients={recipe.recipe.totalNutrients}
+			totalNutrients={recipe.recipe.totalDaily}
 			url={recipe.recipe.url}
 		/>
 

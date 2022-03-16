@@ -11,7 +11,11 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url}) => {
-    console.log(ingredients);
+    console.log(totalNutrients);
+    console.log(typeof(totalNutrients));
+    const NutrientArray = Object.keys(totalNutrients);
+    console.log(NutrientArray);
+    
     return (
         <>
         <div key={uuidv4()}>
@@ -83,9 +87,28 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     </Typography>
                 </AccordionDetails>
         </Accordion>
+
+        <Accordion>
+            <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panella-content"
+                id="panella-header"
+                >
+                    <Typography sx={{fontFamily:'Museo-Sans',}}>Nutrients</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography component={'span'} sx={{fontFamily:'Lato',}}>
+                    <ul key ={uuidv4()} className={style.healthLabelsList}>
+                            {NutrientArray.map(NutrientArray=>(
+                                <li key={uuidv4()}>{NutrientArray}</li>
+                            ))}
+                        </ul>
+                    </Typography>
+                </AccordionDetails>
+        </Accordion>
         </div>
         
-        {totalNutrients}
+        
         <div className={style.StarBox}>
             <Rating></Rating>
         </div>
