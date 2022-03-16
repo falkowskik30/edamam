@@ -11,9 +11,10 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url}) => {
-    console.log(totalNutrients);
+    console.log(totalNutrients.CA);
     console.log(typeof(totalNutrients));
-    const NutrientArray = Object.keys(totalNutrients);
+    const NutrientArray = Object.values(totalNutrients.CA);
+    const nutriKeys = Object.keys(totalNutrients);
     console.log(NutrientArray);
     
     return (
@@ -99,8 +100,8 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                 <AccordionDetails>
                     <Typography component={'span'} sx={{fontFamily:'Lato',}}>
                     <ul key ={uuidv4()} className={style.healthLabelsList}>
-                            {NutrientArray.map(NutrientArray=>(
-                                <li key={uuidv4()}>{NutrientArray}</li>
+                            {nutriKeys.map(key=>(
+                                <li key={uuidv4()}>{totalNutrients[key].label} ({totalNutrients[key].quantity} {totalNutrients[key].unit})</li>
                             ))}
                         </ul>
                     </Typography>
