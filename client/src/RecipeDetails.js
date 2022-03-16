@@ -101,7 +101,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography component={'span'} sx={{fontFamily:'Lato',}}>
                     <ul key ={uuidv4()} className={style.healthLabelsList}>
                             {nutriKeys.map(key=>(
-                                <li key={uuidv4()}>{totalNutrients[key].label} ({totalNutrients[key].quantity} {totalNutrients[key].unit})</li>
+                                <li key={uuidv4()}>{totalNutrients[key].label} ({totalNutrients[key].quantity.toFixed(2)} {totalNutrients[key].unit})</li>
                             ))}
                         </ul>
                     </Typography>
