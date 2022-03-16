@@ -24,7 +24,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography sx={{fontFamily:'Museo-Sans',}}>Ingredients</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography component={'span'}>
+                    <Typography component={'span'} sx={{fontFamily:'Lato',}}>
                         <ul key={uuidv4()} className={style.ingredientList}>
                             {ingredients.map(ingredient => (
                                 <li key={uuidv4()}className={style.ingredientText}>{ingredient.text}</li>
@@ -43,7 +43,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography sx={{fontFamily:'Museo-Sans',}}>Health Labels</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography component={'span'}>
+                    <Typography component={'span'} sx={{fontFamily:'Lato',}}>
                         <ul key ={uuidv4()} className={style.healthLabelsList}>
                             {healthLabels.map(healthLabels=>(
                                 <li key={uuidv4()}>{healthLabels}</li>
@@ -63,7 +63,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography sx={{fontFamily:'Museo-Sans',}}>Calories</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography component={'span'}>
+                    <Typography component={'span'} sx={{fontFamily:'Lato',}}>
                         <p className={style.calorieText}>Total Calories: {calories}</p>
                     </Typography>
                 </AccordionDetails>
@@ -78,7 +78,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography sx={{fontFamily:'Museo-Sans',}}>Link</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
+                    <Typography sx={{fontFamily:'Lato',}}>
                             <a href={url} target="_blank" rel="noopener noreferrer">Full Recipe</a>
                     </Typography>
                 </AccordionDetails>
