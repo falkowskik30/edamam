@@ -21,7 +21,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                 aria-controls="panella-content"
                 id="panella-header"
                 >
-                    <Typography>Ingredients</Typography>
+                    <Typography sx={{fontFamily:'Museo-Sans',}}>Ingredients</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography component={'span'}>
@@ -40,7 +40,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                 aria-controls="panella-content"
                 id="panella-header"
                 >
-                    <Typography>Health Labels</Typography>
+                    <Typography sx={{fontFamily:'Museo-Sans',}}>Health Labels</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography component={'span'}>
@@ -60,7 +60,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                 id="panella-header"
             
                 >
-                    <Typography sx={{fontFamily:'monospace'}}>Calories</Typography>
+                    <Typography sx={{fontFamily:'Museo-Sans',}}>Calories</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography component={'span'}>
@@ -75,7 +75,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                 aria-controls="panella-content"
                 id="panella-header"
                 >
-                    <Typography>Link</Typography>
+                    <Typography sx={{fontFamily:'Museo-Sans',}}>Link</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
