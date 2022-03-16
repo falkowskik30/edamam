@@ -77,3 +77,4 @@ In the event that you receive the ERR:refused to connect/connction, make sure th
 
 [Star Rating Component](https://www.npmjs.com/package/react-simple-star-rating)
 [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+[DOMnesting Solution](https://stackoverflow.com/questions/41928567/div-cannot-appear-as-a-descendant-of-p)
