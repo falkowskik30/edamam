@@ -76,3 +76,4 @@ In the event that you receive the ERR:refused to connect/connction, make sure th
 ## Resources
 
 [Star Rating Component](https://www.npmjs.com/package/react-simple-star-rating)
+[Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
