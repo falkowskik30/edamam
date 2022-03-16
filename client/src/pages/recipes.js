@@ -39,7 +39,7 @@ return (
 	<div className="recipes">
 		{recipes.map(recipe => (
 		<Recipe
-			key={uuidv4}
+			key={uuidv4()}
 			title={recipe.recipe.label}
 			calories={recipe.recipe.calories.toFixed(2)}
 			image={recipe.recipe.image}
