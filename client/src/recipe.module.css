@@ -29,14 +29,6 @@ h1 {
 	object-fit: cover;
 }
 
-.healthLabelsList {
-	font-size:1rem;
-	height:4rem;
-
-	columns: 3;
-	overflow:scroll;
-}
-
 .recipeDetails {
 	font-size: 2rem;
 	color:white;
@@ -53,15 +45,9 @@ h1 {
 	transition: 1s;
 }
 
-.ingredientList {
-	margin-top: .5rem;
-	padding: .25rem;
-}
-
 .ingredientList li {
-	margin: 1rem .5rem;
-	list-style-type: none;
-	border-bottom: .2px solid black;
+	font-size: 1rem;
+	
 }
 
 .ingredientText {
@@ -69,25 +55,13 @@ h1 {
 }
 
 .calorieText {
-	font-size:1.5rem;	
-}
-
-a {
-	padding: 1rem;
-	background-color:rgb(190, 188, 188);
-	border-radius:none;
-	color: white;
-}
-
-a:hover {
-	background-color: gray;
+	font-size:1rem;
 }
 
 .RecipeButton {
 	padding:1.5rem;
 }
 
-.rating {
-	padding:2rem;
-	font-size: 3rem;
+.StarBox {
+	margin: .5rem;
 }
