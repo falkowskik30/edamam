@@ -14,7 +14,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
     console.log(ingredients);
     return (
         <>
-        <div>
+        <div key={uuidv4()}>
         <Accordion>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -27,7 +27,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography>
                         <il key={uuidv4()} className={style.ingredientList}>
                             {ingredients.map(ingredient => (
-                                <li className={style.ingredientText}>{ingredient.text}</li>
+                                <li key={uuidv4()}className={style.ingredientText}>{ingredient.text}</li>
                             ))}
                         </il>
                     </Typography>
@@ -46,7 +46,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
                     <Typography>
                         <il key ={uuidv4()} className={style.healthLabelsList}>
                             {healthLabels.map(healthLabels=>(
-                                <li>{healthLabels}</li>
+                                <li key={uuidv4()}>{healthLabels}</li>
                             ))}
                         </il>
                     </Typography>
