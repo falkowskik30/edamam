@@ -75,6 +75,15 @@ In the event that you receive the ERR:refused to connect/connction, make sure th
 
 ## Resources
 
+### Components and Styling
 [Star Rating Component](https://www.npmjs.com/package/react-simple-star-rating)
 [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 [DOMnesting Solution](https://stackoverflow.com/questions/41928567/div-cannot-appear-as-a-descendant-of-p)
+[How to Customize MUI Components](https://mui.com/customization/how-to-customize/)
+[SX Prop](https://mui.com/system/the-sx-prop/)
+
+### Javascript
+[Object.keys/Object.values](https://www.javascripttutorial.net/object/convert-an-object-to-an-array-in-javascript/)
+
+### ReactJS
+[Routing](https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/)
