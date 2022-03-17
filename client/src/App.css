@@ -45,4 +45,10 @@
   .footer{
     text-align: center;
   }
+
+  h1 {
+    margin-block-start: auto;
+    text-align: center;
+    padding: 1rem;
+  }
   
