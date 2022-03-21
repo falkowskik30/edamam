@@ -1,6 +1,7 @@
 //import React from 'react';
 import style from './recipe.module.css';
 import {v4 as uuidv4} from "uuid";
+import { useState } from 'react';
 //import StarRatingComponent from 'react-star-rating-component';
 import {Rating} from 'react-simple-star-rating';
 import * as React from 'react';
@@ -16,6 +17,13 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
     const NutrientArray = Object.values(totalNutrients.CA);
     const nutriKeys = Object.keys(totalNutrients);
     console.log(NutrientArray);
+    
+
+    const [rating, setRating] = useState(0);
+    const handleRating = (rate) => {
+        setRating(rate)
+    }
+    console.log({rating});
     
     return (
         <>
@@ -111,7 +119,7 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
         
         
         <div className={style.StarBox}>
-            <Rating></Rating>
+            <Rating onClick={handleRating} ratingValue={rating}></Rating>
         </div>
         
             </>
