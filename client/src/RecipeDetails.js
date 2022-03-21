@@ -18,11 +18,11 @@ const RecipeDetails = ({ingredients, healthLabels, calories, totalNutrients, url
     const nutriKeys = Object.keys(totalNutrients);
     console.log(NutrientArray);
     
-
     const [rating, setRating] = useState(0);
     const handleRating = (rate) => {
         setRating(rate)
     }
+
     console.log({rating});
     
     return (
