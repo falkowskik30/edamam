@@ -1,61 +1,25 @@
-import React, { useEffect, useState } from 'react'
-import {v4 as uuidv4} from 'uuid'
-import './App.css';
-import Recipe from './Recipe';
-import axios from 'axios';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar/componentMap";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Recipes from "./pages/recipes";
 
-const App = () => {
-
-const [recipes, setRecipes] = useState([]);
-const [search, setSearch] = useState("");
-const [query, setQuery] = useState("chicken");
-useEffect(() => {
-	getRecipes(); // eslint-disable-next-line
-}, [query])
-const getRecipes = async () => {
-	const response = await axios.get(`http://localhost:5000/recipes/${query}`);
-	setRecipes(response.data);
-	console.log(response.data)
+function App() {
+  return (
+    <>
+    <div className='banner'><img src='logo.png' alt='' ></img></div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path='' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/recipes' element={<Recipes />} />
+      </Routes>
+    </Router>
+    </>
+  );
 };
-const updateSearch = e => {
-	setSearch(e.target.value);
-};
-const getSearch = e => {
-	e.preventDefault();
-	setQuery(search);
-	setSearch("");
-}
-
-return (
-	<div className="App">
-	<div className='banner'><img src='logo.png' alt='' ></img></div>
-	<form className="search-form" onSubmit={getSearch} >
-		<input className="search-bar" type="text" value={search}
-			onChange={updateSearch} />
-		<button className="search-button" type="submit" >
-			Search
-		</button>
-	</form>
-	<div className="recipes">
-		{recipes.map(recipe => (
-		<Recipe
-			key={uuidv4}
-			title={recipe.recipe.label}
-			calories={recipe.recipe.calories.toFixed(2)}
-			image={recipe.recipe.image}
-			ingredients={recipe.recipe.ingredients}
-			healthLabels={recipe.recipe.healthLabels}
-			totalNutrients={recipe.recipe.totalNutrients}
-			url={recipe.recipe.url}
-		/>
-
-		))}
-	</div>
-	<div className='footer'>POWERED by EDAMAM</div>
-
-	</div>
-);
-}
 
 export default App;
-

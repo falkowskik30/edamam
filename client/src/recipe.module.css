@@ -65,3 +65,7 @@ h1 {
 .StarBox {
 	margin: .5rem;
 }
+
+.MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root{
+	font-family: "Lato";
+}
