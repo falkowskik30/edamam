@@ -13,7 +13,7 @@ useEffect(() => {
 	getRecipes(); // eslint-disable-next-line
 }, [query])
 const getRecipes = async () => {
-	const response = await axios.get(`http://localhost:5000/recipes/${query}`);
+	const response = await axios.get(`http://localhost:5001/recipes/${query}`);
 	setRecipes(response.data);
 	console.log(response.data)
 };
