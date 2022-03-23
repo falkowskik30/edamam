@@ -88,4 +88,10 @@ In the event that you receive the ERR:refused to connect/connction, make sure th
 ### ReactJS
 [Routing](https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/)
 
+### Allergen Icons
+These icons were created by Lia Aramburu and downloaded from Vecteezy.
+
+Icons: https://www.vecteezy.com/vector-art/343354-allergen-icons-set
+Creator: https://www.vecteezy.com/members/lia-aramburu
+
 ## Test Commit
